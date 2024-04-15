@@ -1,0 +1,16 @@
+# air.toml
+
+# Entrypoint file or directory.
+root = "."
+
+# Build command.
+build_cmd = "go build -o ./tmp/main ."
+
+# Binary file to run.
+bin = "./tmp/main"
+
+# Watch these filename extensions.
+include_ext = ["go", "tpl", "tmpl", "html", "css", "js", "yml", "toml"]
+
+# Exclude these directory paths.
+exclude_dir = ["node_modules", "tmp", "vendor"]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Title}}</title>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/users">Users</a></li>
+                <li><a href="/contacts">Contacts</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main content -->
+    <main>
+        {{ template "content" . }}
+    </main>
+    
+    <footer>
+        <!-- Footer content -->
+        <p>&copy; 2024 Your Company</p>
+    </footer>
+</body>
+</html>
